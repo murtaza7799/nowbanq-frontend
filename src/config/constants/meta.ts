@@ -55,10 +55,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Import Pool')} | ${t('NowBanq')}`,
       }
-    case '/competition':
-      return {
-        title: `${t('Trading Battle')} | ${t('NowBanq')}`,
-      }
+   
     case '/prediction':
       return {
         title: `${t('Prediction')} | ${t('NowBanq')}`,
@@ -103,21 +100,8 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Make a Proposal')} | ${t('NowBanq')}`,
       }
-    case '/info':
-      return {
-        title: `${t('Overview')} | ${t('NowBanq Info & Analytics')}`,
-        description: 'View statistics for NowBanq exchanges.',
-      }
-    case '/info/pools':
-      return {
-        title: `${t('Pools')} | ${t('NowBanq Info & Analytics')}`,
-        description: 'View statistics for NowBanq exchanges.',
-      }
-    case '/info/tokens':
-      return {
-        title: `${t('Tokens')} | ${t('NowBanq Info & Analytics')}`,
-        description: 'View statistics for NowBanq exchanges.',
-      }
+   
+   
     case '/nfts':
       return {
         title: `${t('Overview')} | ${t('NowBanq')}`,
