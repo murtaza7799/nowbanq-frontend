@@ -38,7 +38,6 @@ const Page: React.FC<
       <StyledPage $removePadding={removePadding} {...props}>
         {children}
         <Flex flexGrow={1} />
-       
       </StyledPage>
     </>
   )

@@ -21,7 +21,6 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Community'),
         href: 'http://nowbanq.com/community',
       },
-  
     ],
   },
   {
@@ -52,7 +51,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Documentation'),
         href: 'http://nowbanq.com/documentation',
       },
-     
+
       {
         label: t('Careers'),
         href: 'http://nowbanq.com/career',

@@ -14,7 +14,6 @@ export interface Address {
   56: string
 }
 
-
 export interface SerializedToken {
   chainId: number
   address: string

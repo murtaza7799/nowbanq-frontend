@@ -13,9 +13,7 @@ const BTTWarning = () => {
         )}
       </Text>
       <Text>1 BTT (OLD) = 1,000 BTT (NEW)</Text>
-      <Link href="/swap">
-        {t('Trade the new BTT token here.')}
-      </Link>
+      <Link href="/swap">{t('Trade the new BTT token here.')}</Link>
       <Link external href="https://medium.com/@BitTorrent/tutorial-how-to-swap-bttold-to-btt-453264d7142">
         {t('For more details on the swap, please refer here.')}
       </Link>

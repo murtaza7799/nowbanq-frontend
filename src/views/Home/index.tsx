@@ -129,7 +129,7 @@ const Home: React.FC = () => {
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
       </PageSection>
-    
+
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}

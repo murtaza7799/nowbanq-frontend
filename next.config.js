@@ -19,9 +19,7 @@ const sentryWebpackPluginOptions = {
 
 /** @type {import('next').NextConfig} */
 const config = {
-  experimental: {
-    styledComponents: true,
-  },
+  
   reactStrictMode: true,
   images: {
     domains: ['static-nft.pancakeswap.com'],
