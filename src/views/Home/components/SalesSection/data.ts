@@ -56,7 +56,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   ),
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    to: '/swap?outputCurrency=0x06Bae0D924c508DF5E731a02A223edD442e490a4',
     text: t('Buy NWB'),
     external: false,
   },

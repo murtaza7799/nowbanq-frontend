@@ -56,7 +56,7 @@ const stepsConfigBuilder = ({ t, userInfos, eventInfos, userStatus, account, the
       buttons: (
         <>
           <Button as="a" href="/swap" target="_blank" width="100%">
-            {t('Buy CAKE')}
+            {t('Buy NWB')}
           </Button>
         </>
       ),
