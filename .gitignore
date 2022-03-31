@@ -17,8 +17,8 @@ cypress/fixtures/example.json
 .idea/
 sdk
 
-/nowbanq/uikit
-/nowbanq/sdk
+/nowbanq/uikit/dist
+
 
 # production
 /build
