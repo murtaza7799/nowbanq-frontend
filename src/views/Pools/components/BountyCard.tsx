@@ -48,13 +48,13 @@ const BountyCard = () => {
 
   const TooltipComponent = ({ fee }: { fee: number }) => (
     <>
-      <Text mb="16px">{t('This bounty is given as a reward for providing a service to other users.')}</Text>
-      <Text mb="16px">
+      <Text mb="16px" style={{color:"black"}}>{t('This bounty is given as a reward for providing a service to other users.')}</Text>
+      <Text mb="16px" style={{color:"black"}}>
         {t(
           'Whenever you successfully claim the bounty, you’re also helping out by activating the Auto CAKE Pool’s compounding function for everyone.',
         )}
       </Text>
-      <Text style={{ fontWeight: 'bold' }}>
+      <Text style={{ fontWeight: 'bold', color:"black"}}>
         {t('Auto-Compound Bounty: %fee%% of all Auto CAKE pool users pending yield', { fee: fee / 100 })}
       </Text>
     </>
