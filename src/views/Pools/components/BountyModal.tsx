@@ -64,7 +64,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
   const dollarBountyToDisplay = hasFetchedDollarBounty ? getBalanceNumber(estimatedDollarBountyReward, 18) : 0
   const cakeBountyToDisplay = hasFetchedCakeBounty ? getBalanceNumber(estimatedCakeBountyReward, 18) : 0
 
-  const { targetRef, tooltip, tooltipVisible } = useTooltip(<TooltipComponent fee={callFee} />, {
+  const { targetRef, tooltip, tooltipVisible } = useTooltip(<TooltipComponent fee={callFee}  style={{backgroundcolor:"black"}}/>, {
     placement: 'bottom',
     tooltipPadding: { right: 15 },
   })
@@ -77,7 +77,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
       toastSuccess(
         t('Bounty collected!'),
         <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-          {t('CAKE bounty has been sent to your wallet.')}
+          {t('NWB bounty has been sent to your wallet.')}
         </ToastDescriptionWithTx>,
       )
     }

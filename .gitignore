@@ -15,7 +15,7 @@ cypress/fixtures/example.json
 /.next/
 /out/
 .idea/
-
+node_modules
 
 dist
 
