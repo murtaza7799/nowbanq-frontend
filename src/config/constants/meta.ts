@@ -63,11 +63,6 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
         title: `${t('Pools')} | ${t('NowBanq')}`,
       }
   
-    
-    case '/teams':
-      return {
-        title: `${t('Leaderboard')} | ${t('NowBanq')}`,
-      }
 
     case '/nfts':
       return {

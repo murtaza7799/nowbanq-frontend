@@ -69,9 +69,10 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
     return undefined
   }, [chainId, currency, ethPair, ethPairState, busdEthPair, busdEthPairState, busdPair, busdPairState, wrapped])
 }
-
+// price show in page header
 export const useCakeBusdPrice = (): Price | undefined => {
   const cakeBusdPrice = useBUSDPrice(tokens.cake)
+  // console.log('cakeBusdPrice', cakeBusdPrice)
   return cakeBusdPrice
 }
 
