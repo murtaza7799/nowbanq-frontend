@@ -4,8 +4,8 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'NowBanq',
   description:
-    'The most popular AMM on BSC by user count! Earn CAKE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by NowBanq), NFTs, and more, on a platform you can trust.',
-  image: 'https://NowBanq/images/hero.png',
+    'The most popular AMM on BSC by user count! Earn NWB through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by NowBanq), NFTs, and more, on a platform you can trust.',
+  image: 'https://swap.nowbanq.com/images/hero.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
@@ -16,17 +16,11 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
     basePath = '/add'
   } else if (path.startsWith('/remove')) {
     basePath = '/remove'
-  } else if (path.startsWith('/teams')) {
-    basePath = '/teams'
-  } else if (path.startsWith('/voting/proposal') && path !== '/voting/proposal/create') {
-    basePath = '/voting/proposal'
-  } else if (path.startsWith('/nfts/collections')) {
+  }  else if (path.startsWith('/nfts/collections')) {
     basePath = '/nfts/collections'
   } else if (path.startsWith('/nfts/profile')) {
     basePath = '/nfts/profile'
-  } else if (path.startsWith('/pancake-squad')) {
-    basePath = '/pancake-squad'
-  } else {
+  }else {
     basePath = path
   }
 
@@ -55,15 +49,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Import Pool')} | ${t('NowBanq')}`,
       }
-
-    case '/prediction':
-      return {
-        title: `${t('Prediction')} | ${t('NowBanq')}`,
-      }
-    case '/prediction/leaderboard':
-      return {
-        title: `${t('Leaderboard')} | ${t('NowBanq')}`,
-      }
+ 
     case '/farms':
       return {
         title: `${t('Farms')} | ${t('NowBanq')}`,
@@ -76,27 +62,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Pools')} | ${t('NowBanq')}`,
       }
-    case '/lottery':
-      return {
-        title: `${t('Lottery')} | ${t('NowBanq')}`,
-      }
-    
-    case '/teams':
-      return {
-        title: `${t('Leaderboard')} | ${t('NowBanq')}`,
-      }
-    case '/voting':
-      return {
-        title: `${t('Voting')} | ${t('NowBanq')}`,
-      }
-    case '/voting/proposal':
-      return {
-        title: `${t('Proposals')} | ${t('NowBanq')}`,
-      }
-    case '/voting/proposal/create':
-      return {
-        title: `${t('Make a Proposal')} | ${t('NowBanq')}`,
-      }
+  
 
     case '/nfts':
       return {
@@ -114,10 +80,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Profile')} | ${t('NowBanq')}`,
       }
-    case '/pancake-squad':
-      return {
-        title: `${t('Pancake Squad')} | ${t('NowBanq')}`,
-      }
+
     default:
       return null
   }
