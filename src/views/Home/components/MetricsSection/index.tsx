@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon, Image } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetStats } from 'hooks/api'
 import useTheme from 'hooks/useTheme'
@@ -34,10 +34,11 @@ const Stats = () => {
   const StakedCardData: IconCardData = {
     icon: <ChartIcon color="failure" width="36px" />,
   }
+  
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
+      <Image src="https://swap.nowbanq.com/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png" width={100} height={100} />
       <Heading textAlign="center" scale="xl">
         {t('Used by millions.')}
       </Heading>
