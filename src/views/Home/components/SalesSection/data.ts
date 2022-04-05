@@ -35,7 +35,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://nowbanq.com/products/yield-farming',
+    to: 'https://nowbanq.com/yield-farming',
     text: t('Learn'),
     external: true,
   },
