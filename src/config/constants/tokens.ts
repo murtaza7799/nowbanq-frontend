@@ -2,8 +2,6 @@ import { ChainId, Token } from '@pancakeswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
-import { NewEndBlockEventFilter } from '../abi/types/AnniversaryAchievement';
-import { NewBufferAndIntervalSecondsEvent } from '../abi/types/Predictions';
 
 const { MAINNET, TESTNET } = ChainId
 
