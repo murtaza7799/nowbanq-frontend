@@ -13,11 +13,8 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.cake,
-    mainnetTokens.busd,
-    mainnetTokens.usdt,
+    mainnetTokens.nwb,
     mainnetTokens.btcb,
-    mainnetTokens.ust,
     mainnetTokens.eth,
     mainnetTokens.usdc,
   ],
@@ -43,8 +40,8 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.btcb],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.MAINNET]: [ mainnetTokens.nwb, mainnetTokens.btcb, mainnetTokens.eth ],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
