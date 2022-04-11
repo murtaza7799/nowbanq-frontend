@@ -1,7 +1,8 @@
 import { ChainId, JSBI, Percent, Token } from '@pancakeswap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0x10ED43C718714eb63d5aA57B78B54704E256024E'
+export const ROUTER_ADDRESS = '0x928630a5164D2E4A827D265d2a0C16af0C0265fE'
+
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -12,11 +13,8 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.cake,
-    mainnetTokens.busd,
-    mainnetTokens.usdt,
+    mainnetTokens.nwb,
     mainnetTokens.btcb,
-    mainnetTokens.ust,
     mainnetTokens.eth,
     mainnetTokens.usdc,
   ],
@@ -42,8 +40,8 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.btcb],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.MAINNET]: [ mainnetTokens.nwb, mainnetTokens.btcb, mainnetTokens.eth ],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

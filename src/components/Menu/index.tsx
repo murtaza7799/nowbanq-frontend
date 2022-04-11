@@ -38,7 +38,8 @@ const Menu = (props) => {
       langs={languageList}
       setLang={setLanguage}
       // price change here
-      cakePriceUsd={cakePriceUsd.toNumber()}
+      // cakePriceUsd={0.0001}
+       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config(t)}
       subLinks={activeMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
       footerLinks={footerLinks(t)}
