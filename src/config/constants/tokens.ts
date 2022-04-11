@@ -2,6 +2,8 @@ import { ChainId, Token } from '@pancakeswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
+import { NewEndBlockEventFilter } from '../abi/types/AnniversaryAchievement';
+import { NewBufferAndIntervalSecondsEvent } from '../abi/types/Predictions';
 
 const { MAINNET, TESTNET } = ChainId
 
@@ -29,6 +31,14 @@ export const mainnetTokens = defineTokens({
     'CAKE',
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
+  ),
+  nwb: new Token(
+    MAINNET,
+    '0x06Bae0D924c508DF5E731a02A223edD442e490a4',
+    18,
+    'NWB',
+    'NowBanq Token',
+    'https://swap.nowbanq.com/',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   beta: new Token(
