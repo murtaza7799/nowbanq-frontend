@@ -55,7 +55,7 @@ function MyApp(props: AppProps) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover NowBanq, the leading DEX on Binance Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
+          content="Cheaper and faster than Uniswap? Discover NowBanq, the leading DEX on Binance Smart Chain (BSC) with the best farms in DeFi"
         />
         <meta name="theme-color" content="#1FC7D4" />
         <meta name="twitter:image" content="https://swap.nowbanq.com/images/hero.png" />
