@@ -33,7 +33,8 @@
     ]
   },
   "dependencies": {
-    "nowbanqsdk":"./nowbanq",
+    "nowbanq-uikit": "git+https://github.com/murtaza7799/nowbanq-uikit.git",  
+    "nowbanq-sdk": "git+https://github.com/murtaza7799/nowbanq-swap-sdk.git",  
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/abi": "^5.5.0",
     "@ethersproject/address": "^5.5.0",
@@ -88,6 +89,7 @@
     "swr": "^1.1.2",
     "typescript": "^4.5.4"
   },
+
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
@@ -128,7 +130,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/murtaza7799/pancake-frontend-modified-as-nowbanq.git"
+    "url": "git+https://github.com/murtaza7799/nowbanq-uikit.git"
   },
   "keywords": [],
   "author": "",
