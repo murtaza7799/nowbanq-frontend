@@ -2019,6 +2019,14 @@ export const testnetTokens = defineTokens({
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),
+  nwb: new Token(
+    MAINNET,
+    '0x06Bae0D924c508DF5E731a02A223edD442e490a4',
+    18,
+    'NWB',
+    'NowBanq Token',
+    'https://swap.nowbanq.com/',
+  ),
   busd: new Token(
     TESTNET,
     '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
