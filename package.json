@@ -33,8 +33,8 @@
     ]
   },
   "dependencies": {
-    "nowbanq-uikit": "git+https://github.com/murtaza7799/nowbanq-uikit.git",  
-    "nowbanq-sdk": "git+https://github.com/murtaza7799/nowbanq-swap-sdk.git",  
+    "nowbanq-uikit": "git+https://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@github.com/murtaza7799/nowbanq-uikit.git",  
+    "nowbanq-sdk": "git+https://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@github.com/murtaza7799/nowbanq-swap-sdk.git",  
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/abi": "^5.5.0",
     "@ethersproject/address": "^5.5.0",
