@@ -28,4 +28,5 @@ jobs:
     - run: npm i @next/swc-linux-x64-gnu
     - run: cd ..
     - run: git clone https://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@github.com/murtaza7799/nowbanq-uikit.git
+    - run: git clone https://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@github.com/murtaza7799/nowbanq-swap-sdk.git
      
