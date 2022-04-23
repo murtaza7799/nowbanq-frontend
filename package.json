@@ -5,12 +5,13 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",
+    "prebuild": "cd ./../nowbanq-uikit && yarn build ",
     "build": "next build",
     "start": "next start",
     "test": "jest",
     "test:config": "jest src/__tests__/config/ --testPathIgnorePatterns",
     "integration-test": "start-server-and-test start http://localhost:3000 'cypress run'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' ",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
     "format:check:staged": "pretty-quick --staged --check",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
@@ -32,7 +33,6 @@
     ]
   },
   "dependencies": {
-    "nowbanqsdk":"./nowbanq",
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/abi": "^5.5.0",
     "@ethersproject/address": "^5.5.0",
@@ -87,6 +87,7 @@
     "swr": "^1.1.2",
     "typescript": "^4.5.4"
   },
+
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
@@ -127,7 +128,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/murtaza7799/pancake-frontend-modified-as-nowbanq.git"
+    "url": "git+https://github.com/murtaza7799/nowbanq-uikit.git"
   },
   "keywords": [],
   "author": "",

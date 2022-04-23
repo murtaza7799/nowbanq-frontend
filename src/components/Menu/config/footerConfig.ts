@@ -7,19 +7,19 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'http://nowbanq.com/contact',
+        href: 'https://nowbanq.com/contact',
       },
       {
         label: t('Brand'),
-        href: 'http://nowbanq.com/brand',
+        href: 'https://nowbanq.com/brand',
       },
       {
         label: t('Blog'),
-        href: 'http://nowbanq.com/blog',
+        href: 'https://nowbanq.com/blog',
       },
       {
         label: t('Community'),
-        href: 'http://nowbanq.com/community',
+        href: 'https://nowbanq.com/community',
       },
     ],
   },
@@ -28,15 +28,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'http://nowbanq.com/support',
+        href: 'https://nowbanq.com/support',
       },
       {
         label: t('Troubleshooting'),
-        href: 'http://nowbanq.com/troubleshoot',
+        href: 'https://nowbanq.com/troubleshoot',
       },
       {
         label: t('Guides'),
-        href: 'http://nowbanq.com/guides',
+        href: 'https://nowbanq.com/guides',
       },
     ],
   },
@@ -45,16 +45,16 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: 'Github',
-        href: 'http://nowbanq.com/github',
+        href: 'https://nowbanq.com/github',
       },
       {
         label: t('Documentation'),
-        href: 'http://nowbanq.com/documentation',
+        href: 'https://nowbanq.com/documentation',
       },
 
       {
         label: t('Careers'),
-        href: 'http://nowbanq.com/career',
+        href: 'https://nowbanq.com/career',
       },
     ],
   },
