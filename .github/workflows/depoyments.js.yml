@@ -23,10 +23,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm i
-    - run: npm i @next/swc-linux-x64-gnu
-    - run: cd ..
+        cache: 'yarn'
+    - name: Github repo
     - run: git clone https://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@github.com/murtaza7799/nowbanq-uikit.git
     - run: git clone https://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@github.com/murtaza7799/nowbanq-swap-sdk.git
-     
+    - name: install depedencies
+    - run: yarn 
+    - run: yarn add @next/swc-linux-x64-gnu
+    - name: run build
+    - run: yarn build
