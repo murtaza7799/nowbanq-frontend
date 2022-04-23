@@ -5,7 +5,7 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",
-    "prebuild": "cd ./../nowbanq-uikit && yarn build ",
+    "prebuild": "cd ./nowbanq-uikit && yarn && yarn build  && cd ./../nowbanq-swap-sdk && yarn && yarn build ",
     "build": "next build",
     "start": "next start",
     "test": "jest",
