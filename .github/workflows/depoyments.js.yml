@@ -30,3 +30,4 @@ jobs:
     - run: npm i 
     - run: npm i @next/swc-linux-x64-gnu
     - run: npm run build
+    - run: pm2 reload all
