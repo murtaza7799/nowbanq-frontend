@@ -16,19 +16,22 @@ jobs:
       matrix:
         node-version: [17.x]
     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    
+   
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v3 
+      
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    env: 
-    TOKEN: ${{ secrets.REPO_TOKEN}}    
+        
+       
 
-    - run: git clone https://TOKEN@github.com/murtaza7799/nowbanq-uikit.git
-    - run: git clone https://TOKEN@github.com/murtaza7799/nowbanq-swap-sdk.git
+    - run: git clone https://${{ secrets.REPO_TOKEN }}@github.com/murtaza7799/nowbanq-uikit.git
+    - run: git clone https://${{ secrets.REPO_TOKEN }}@github.com/murtaza7799/nowbanq-swap-sdk.git
     - run: npm i 
     - run: npm i @next/swc-linux-x64-gnu
     - run: npm run build
+    - run: pm2 reload all
