@@ -14,7 +14,7 @@ const NoChartAvailable: React.FC<NoChartAvailableProps> = ({ token0Address, toke
   return (
     <>
       <Flex justifyContent="center" alignItems="center" height="100%" flexDirection="column">
-        <Text mb={['8px', '8px', '0px']}>{t('Failed to load price chart for this pair')}</Text>
+        <Text mb={['8px', '8px', '0px']}>{t('Failed to load price chart for this pair, Liquidity too low of This Pair')}</Text>
         <Text
           textAlign={isMobile ? 'center' : 'left'}
           mb={['8px', '8px', '0px']}
