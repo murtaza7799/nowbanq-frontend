@@ -25,8 +25,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - run: git clone https://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@github.com/murtaza7799/nowbanq-uikit.git
-    - run: git clone https://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@github.com/murtaza7799/nowbanq-swap-sdk.git
+    - run: git clone https://{secrets.REPO_TOKEN}@github.com/murtaza7799/nowbanq-uikit.git
+    - run: git clone https://{secrets.REPO_TOKEN}@github.com/murtaza7799/nowbanq-swap-sdk.git
     - run: npm i 
     - run: npm i @next/swc-linux-x64-gnu
     - run: npm run build
