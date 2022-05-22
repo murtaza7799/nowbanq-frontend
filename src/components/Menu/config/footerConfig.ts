@@ -45,7 +45,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: 'Github',
-        href: 'https://nowbanq.com/github',
+        href: 'https://github.com/nowbanq',
       },
       {
         label: t('Documentation'),
