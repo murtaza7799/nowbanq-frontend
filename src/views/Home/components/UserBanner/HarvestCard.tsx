@@ -46,7 +46,7 @@ const HarvestCard = () => {
         toastSuccess(
           `${t('Harvested')}!`,
           <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' })}
+            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'NWB' })}
           </ToastDescriptionWithTx>,
         )
       }
@@ -63,7 +63,7 @@ const HarvestCard = () => {
                 {preText}
               </Text>
             )}
-            {!earningsBusd.isNaN() ? (
+            {/* {!earningsBusd.isNaN() ? (
               <Balance
                 decimals={earningsBusd.gt(0) ? 2 : 0}
                 fontSize="24px"
@@ -74,10 +74,10 @@ const HarvestCard = () => {
               />
             ) : (
               <Skeleton width={96} height={24} my="2px" />
-            )}
-            <Text mb={['16px', null, null, '0']} color="textSubtle">
+            )} */}
+            {/* <Text mb={['16px', null, null, '0']} color="textSubtle">
               {toCollectText}
-            </Text>
+            </Text> */}
           </Flex>
           {numTotalToCollect <= 0 ? (
             <NextLinkFromReactRouter to="farms">
