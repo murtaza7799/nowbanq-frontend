@@ -328,7 +328,9 @@ const Pools: React.FC = () => {
             <Loading />
           </Flex>
         )}
-        {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
+                <Text style={{ textAlign: "center" , fontSize: 40}}>Pools Will be Updated Soon</Text>
+
+        {/* {viewMode === ViewMode.CARD ? cardLayout : tableLayout} */}
         <div ref={observerRef} />
         <Image
           mx="auto"
