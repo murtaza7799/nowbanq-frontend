@@ -257,7 +257,7 @@ const Farms: React.FC = ({ children }) => {
     const { token, quoteToken } = farm
     const tokenAddress = token.address
     const quoteTokenAddress = quoteToken.address
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('PANCAKE', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('NowBanq', '')
 
     const row: RowProps = {
       apr: {
@@ -402,7 +402,8 @@ const Farms: React.FC = ({ children }) => {
             </LabelWrapper>
           </FilterContainer>
         </ControlContainer>
-        {renderContent()}
+        <Text style={{ textAlign: "center" , fontSize: 40}}>Farms Will be Updated Soon</Text>
+        {/* {renderContent()} */}
         {account && !userDataLoaded && stakedOnly && (
           <Flex justifyContent="center">
             <Loading />
