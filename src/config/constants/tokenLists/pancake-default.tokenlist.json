@@ -1,6 +1,6 @@
 {
   "name": "NowBanq Default List",
-  "timestamp": "2022-01-26T11:45:09Z",
+  "timestamp": "",
   "version": {
     "major": 4,
     "minor": 0,
@@ -43,7 +43,7 @@
       "logoURI": "https://swap.nowbanq.com/images/tokens/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c.png"
     },
     {
-      "name": "USDT Token",
+      "name": "Tether USD",
       "symbol": "USDT",
       "address": "0x55d398326f99059fF775485246999027B3197955",
       "chainId": 56,
