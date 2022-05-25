@@ -32,7 +32,7 @@ export const mainnetTokens = defineTokens({
   ),
   nwb: new Token(
     MAINNET,
-    '0x06Bae0D924c508DF5E731a02A223edD442e490a4',
+    '0x5b7fFe8BAFB420e413fd928CDc22AD3554f14c67',
     18,
     'NWB',
     'NowBanq Token',
@@ -2021,7 +2021,7 @@ export const testnetTokens = defineTokens({
   ),
   nwb: new Token(
     MAINNET,
-    '0x06Bae0D924c508DF5E731a02A223edD442e490a4',
+    '0x5b7fFe8BAFB420e413fd928CDc22AD3554f14c67',
     18,
     'NWB',
     'NowBanq Token',
