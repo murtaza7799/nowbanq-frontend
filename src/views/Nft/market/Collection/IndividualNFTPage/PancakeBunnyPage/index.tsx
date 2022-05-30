@@ -16,7 +16,6 @@ import useLastUpdated from 'hooks/useLastUpdated'
 import usePreviousValue from 'hooks/usePreviousValue'
 import { useFastRefreshEffect } from 'hooks/useRefreshEffect'
 import useIsWindowVisible from 'hooks/useIsWindowVisible'
-import { PANCAKE_BUNNIES_UPDATE_FREQUENCY } from 'config'
 import { useGetCollectionDistributionPB } from 'views/Nft/market/hooks/useGetCollectionDistribution'
 import MainPancakeBunnyCard from './MainPancakeBunnyCard'
 import ManagePancakeBunniesCard from './ManagePancakeBunniesCard'
@@ -28,6 +27,7 @@ import { pancakeBunniesAddress } from '../../../constants'
 import { sortNFTsByPriceBuilder } from './ForSaleTableCard/utils'
 import { SortType } from '../../../types'
 import { TwoColumnsContainer } from '../shared/styles'
+import { PANCAKE_BUNNIES_UPDATE_FREQUENCY } from '../../../../../../config/index';
 
 interface IndividualPancakeBunnyPageProps {
   bunnyId: string
@@ -79,7 +79,7 @@ const IndividualPancakeBunnyPageBase: React.FC<IndividualPancakeBunnyPageProps> 
     if (
       prevBunnyId !== bunnyId ||
       refreshTriggered ||
-      (msSinceLastUpdate > PAN_BUNNIES_UPDATE_FREQUENCY && !isUpdatingPancakeBunnies && isWindowVisible)
+      (msSinceLastUpdate > PANCAKE_BUNNIES_UPDATE_FREQUENCY && !isUpdatingPancakeBunnies && isWindowVisible)
     ) {
       fetchMorePancakeBunnies(priceSort)
     }
