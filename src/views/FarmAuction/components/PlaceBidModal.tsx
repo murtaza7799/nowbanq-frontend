@@ -145,7 +145,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
       <ExistingInfo>
         <Flex justifyContent="space-between">
           <Text>{t('Your existing bid')}</Text>
-          <Text>{t('%num% CAKE', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
+          <Text>{t('%num% NWB', { num: getBalanceNumber(amount).toLocaleString() })}</Text>
         </Flex>
         <Flex justifyContent="space-between">
           <Text>{t('Your position')}</Text>
@@ -157,12 +157,12 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           <Text>{t('Bid a multiple of 10')}</Text>
           <Flex>
             <LogoRoundIcon width="24px" height="24px" mr="4px" />
-            <Text bold>CAKE</Text>
+            <Text bold>NWB</Text>
           </Flex>
         </Flex>
         {isFirstBid && (
           <Text pb="8px" small>
-            {t('First bid must be %initialBidAmount% CAKE or more.', { initialBidAmount })}
+            {t('First bid must be %initialBidAmount% NWB or more.', { initialBidAmount })}
           </Text>
         )}
         <BalanceInput
@@ -252,7 +252,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           )}
         </Flex>
         <Text color="textSubtle" small mt="24px">
-          {t('If your bid is unsuccessful, you’ll be able to reclaim your CAKE after the auction.')}
+          {t('If your bid is unsuccessful, you’ll be able to reclaim your NWB after the auction.')}
         </Text>
       </InnerContent>
     </StyledModal>

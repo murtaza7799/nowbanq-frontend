@@ -82,7 +82,7 @@ const StartPage: React.FC<StartPageProps> = ({ goToApprove, goToChange, goToRemo
         <Text as="p" color="failure">
           {!isProfileCostsLoading &&
             !hasMinimumCakeRequired &&
-            t('%minimum% CAKE required to change profile pic', { minimum: formatBigNumber(minimumCakeRequired) })}
+            t('%minimum% NWB required to change profile pic', { minimum: formatBigNumber(minimumCakeRequired) })}
         </Text>
       </Flex>
       {profile.isActive ? (

@@ -1,7 +1,7 @@
 {
   "short_name": "NowBanq",
   "name": "NowBanq",
-  "description": "Farm NWB with Pancake LP Tokens",
+  "description": "Farm NWB with NowBanq LP Tokens",
   "homepage_url": "https://swap.nowbanq.com",
   "start_url": ".",
   "display": "standalone",

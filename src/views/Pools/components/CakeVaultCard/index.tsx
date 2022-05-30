@@ -51,7 +51,7 @@ export const CreditCalcBlock = () => {
             'The latest credit calculation period has ended. After the coming IFO, credits will be reset and the calculation will resume.',
           )}
         </Text>
-        <LinkExternal href="https://twitter.com/pancakeswap">
+        <LinkExternal href="https://twitter.com/NowBanq">
           {t('Follow us on Twitter to catch the latest news about the coming IFO.')}
         </LinkExternal>
       </>
@@ -59,10 +59,10 @@ export const CreditCalcBlock = () => {
       <>
         <Text>
           {t(
-            'The start block of the current calculation period. Your average IFO CAKE Pool staking balance is calculated throughout this period.',
+            'The start block of the current calculation period. Your average IFO NowBnaq Pool staking balance is calculated throughout this period.',
           )}
         </Text>
-        <LinkExternal href="https://medium.com/pancakeswap/initial-farm-offering-ifo-3-0-ifo-staking-pool-622d8bd356f1">
+        <LinkExternal href="https://medium.com/NowBanq/initial-farm-offering-ifo-3-0-ifo-staking-pool-622d8bd356f1">
           {t('Check out our Medium article for more details.')}
         </LinkExternal>
       </>

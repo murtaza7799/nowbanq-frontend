@@ -28,7 +28,7 @@ const config = ({ t }: FAQsType) => [
     description: [
       t('The max limit per wallet is 10 NFTs.'),
       t(
-        'Users holding Gen 0 Pancake Bunny NFTs at the snapshot may also purchase one additional Pancake Squad NFT in the presale for each Pancake Bunny they hold.',
+        'Users holding Gen 0 NowBanq Bunny NFTs at the snapshot may also purchase one additional NowBnaq Squad NFT in the presale for each Pancake Bunny they hold.',
       ),
       t(
         'For example, if you have 5 Gen 0 bunnies, you can buy 5 minting tickets in the presale, then max. 10 in the public sale.',
@@ -37,7 +37,7 @@ const config = ({ t }: FAQsType) => [
   },
   {
     title: t('Where do the fees go?'),
-    description: [t('100% of CAKE spent on Pancake Squad NFTs will be burned as part of our weekly CAKE burn.')],
+    description: [t('100% of NWB spent on NowBanq Squad NFTs will be burned as part of our weekly NWB burn.')],
   },
   {
     title: t('How are the NFTs randomly distributed?'),

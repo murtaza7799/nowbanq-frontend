@@ -402,7 +402,7 @@ const BuyTicketsModal: React.FC<BuyTicketsModalProps> = ({ onDismiss }) => {
             </Flex>
           </Flex>
           <Text fontSize="14px" color="textSubtle">
-            ~{discountValue} CAKE
+            ~{discountValue} NWB
           </Text>
         </Flex>
         <Flex borderTop={`1px solid ${theme.colors.cardBorder}`} pt="8px" mb="24px" justifyContent="space-between">
@@ -410,7 +410,7 @@ const BuyTicketsModal: React.FC<BuyTicketsModalProps> = ({ onDismiss }) => {
             {t('You pay')}
           </Text>
           <Text fontSize="16px" bold>
-            ~{totalCost} CAKE
+            ~{totalCost} NWB
           </Text>
         </Flex>
 

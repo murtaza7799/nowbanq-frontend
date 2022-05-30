@@ -335,7 +335,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
           <Text mt="4px" mb="16px" color="textSubtle">
             {vaultKey
               ? vaultPoolConfig[vaultKey].description
-              : `${t('Earn')} CAKE ${t('Stake').toLocaleLowerCase()} CAKE`}
+              : `${t('Earn')} NWB ${t('Stake').toLocaleLowerCase()} CAKE`}
           </Text>
         )}
         {pool.vaultKey ? (
