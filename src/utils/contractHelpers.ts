@@ -144,10 +144,10 @@ export const getPointCenterIfoContract = (signer?: Signer | Provider) => {
   return getContract(pointCenterIfo, getPointCenterIfoAddress(), signer) as PointCenterIfo
 }
 export const getCakeContract = (signer?: Signer | Provider) => {
-  return getContract(cakeAbi, tokens.cake.address, signer) as NWB
+  return getContract(cakeAbi, tokens.nwb.address, signer) as NWB
 }
 export const getProfileContract = (signer?: Signer | Provider) => {
-  return getContract(profileABI, getPancakeProfileAddress(), signer) as NowBanqProfile
+  return getContract(profileABI, getPancakeProfileAddress(), signer) as PancakeProfile
 }
 export const getPancakeRabbitContract = (signer?: Signer | Provider) => {
   return getContract(pancakeRabbitsAbi, getPancakeRabbitsAddress(), signer) as PancakeRabbits
