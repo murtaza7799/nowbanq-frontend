@@ -15,6 +15,7 @@ import { getAddress } from 'utils/addressHelpers'
 import useApproveFarm from '../../hooks/useApproveFarm'
 import HarvestAction from './HarvestAction'
 import StakeAction from './StakeAction'
+import { NewRewardPerBlockEvent } from '../../../../config/abi/types/SousChefV2';
 
 const Action = styled.div`
   padding-top: 16px;
@@ -78,7 +79,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
     <Action>
       <Flex>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          CAKE
+          NWB
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
           {t('Earned')}
