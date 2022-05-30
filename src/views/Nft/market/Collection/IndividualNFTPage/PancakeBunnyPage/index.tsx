@@ -79,7 +79,7 @@ const IndividualPancakeBunnyPageBase: React.FC<IndividualPancakeBunnyPageProps> 
     if (
       prevBunnyId !== bunnyId ||
       refreshTriggered ||
-      (msSinceLastUpdate > PANCAKE_BUNNIES_UPDATE_FREQUENCY && !isUpdatingPancakeBunnies && isWindowVisible)
+      (msSinceLastUpdate > PAN_BUNNIES_UPDATE_FREQUENCY && !isUpdatingPancakeBunnies && isWindowVisible)
     ) {
       fetchMorePancakeBunnies(priceSort)
     }

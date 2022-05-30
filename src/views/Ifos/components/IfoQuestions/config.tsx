@@ -6,11 +6,11 @@ const config = [
     title: <Trans>What’s the difference between a Basic Sale and Unlimited Sale?</Trans>,
     description: [
       <Trans>
-        In the Basic Sale, every user can commit a maximum of about 100 USD worth of CAKE. We calculate the maximum CAKE
+        In the Basic Sale, every user can commit a maximum of about 100 USD worth of NWB. We calculate the maximum NWB
         amount about 30 minutes before each IFO. The Basic Sale has no participation fee.
       </Trans>,
       <Trans>
-        In the Unlimited Sale, there’s no limit to the amount of CAKE you can commit. However, there’s a fee for
+        In the Unlimited Sale, there’s no limit to the amount of NWB you can commit. However, there’s a fee for
         participation: see below.
       </Trans>,
     ],
@@ -20,7 +20,7 @@ const config = [
     description: [
       <Trans>
         You can choose one or both at the same time! If you’re only committing a small amount, we recommend the Basic
-        Sale first. Just remember you need a PancakeSwap Profile in order to participate.
+        Sale first. Just remember you need a NowBanq Profile in order to participate.
       </Trans>,
     ],
   },
@@ -37,12 +37,12 @@ const config = [
   },
   {
     title: <Trans>Where does the participation fee go?</Trans>,
-    description: [<Trans>The CAKE from the participation fee will be thrown into the weekly token burn.</Trans>],
+    description: [<Trans>The NWB from the participation fee will be thrown into the weekly token burn.</Trans>],
   },
   {
     title: <Trans>How can I get an achievement for participating in the IFO?</Trans>,
     description: [
-      <Trans>You need to contribute a minimum of about 10 USD worth of CAKE to either sale.</Trans>,
+      <Trans>You need to contribute a minimum of about 10 USD worth of NWB to either sale.</Trans>,
       <Trans>
         You can contribute to one or both, it doesn’t matter: only your overall contribution is counted for the
         achievement.
