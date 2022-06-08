@@ -24,10 +24,10 @@ export const mainnetTokens = defineTokens({
   bnb: new Token(MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB', 'https://www.binance.com/'),
   cake: new Token(
     MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0x5b7fFe8BAFB420e413fd928CDc22AD3554f14c67',
     18,
-    'CAKE',
-    'PancakeSwap Token',
+    'NWB',
+    'NowBanq Token',
     'https://pancakeswap.finance/',
   ),
   nwb: new Token(
@@ -220,7 +220,7 @@ export const mainnetTokens = defineTokens({
   ),
   syrup: new Token(
     MAINNET,
-    '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+    '0xb984881629E195325138A1a1B1D418272E6077F7',
     18,
     'SYRUP',
     'SyrupBar Token',
