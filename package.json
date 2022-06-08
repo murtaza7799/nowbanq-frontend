@@ -5,7 +5,7 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "dev": "next dev",
-    "prebuild": "cd ./nowbanq-uikit && yarn && yarn build  && cd ./../nowbanq-swap-sdk && yarn && yarn build ",
+    "prebuild": "cd ./nowbanq-uikit && yarn build  && cd ./../nowbanq-swap-sdk && yarn build ",
     "build": "next build",
     "start": "next start",
     "test": "jest",
@@ -17,7 +17,7 @@
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "updateLPsAPR": "NODE_PATH=./src ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/updateLPsAPR.ts",
     "prepare": "husky install",
-    "postinstall": "yarn run typechain",
+    "postinstall": "yarn run typechain && cd ./nowbanq-uikit && yarn && cd ./../nowbanq-swap-sdk && yarn ",
     "typechain": "typechain --out-dir src/config/abi/types --target=ethers-v5 \"src/config/abi/*.json\""
   },
   "browserslist": {

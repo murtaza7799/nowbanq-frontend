@@ -1,7 +1,7 @@
 export default {
   masterChef: {
     // here is the nowbanwshef address at chain 56
-    97: '0x835edd1ec3826eA4f73B5f16fdB0316D80c7dDb6',
+    97: '',
     56: '0x835edd1ec3826eA4f73B5f16fdB0316D80c7dDb6',
   },
   sousChef: {

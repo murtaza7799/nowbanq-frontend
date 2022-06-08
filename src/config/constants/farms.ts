@@ -10,33 +10,33 @@ const farms: SerializedFarmConfig[] = [
    */
   {
     pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'NWB',
     lpAddresses: {
-      97: '0x9C21123D94b93361a29B2C2EFB3d5CD8B17e0A9e',
-      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      97: '',
+      56: '0x5b7fFe8BAFB420e413fd928CDc22AD3554f14c67',
     },
     token: serializedTokens.syrup,
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 251,
-    lpSymbol: 'CAKE-BNB LP',
+    pid: 2,
+    lpSymbol: 'BNB-NWB LP',
     lpAddresses: {
-      97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
+      97: '',
+      56: '0x89363F9Ecf37a95913D0DC90D4eDE7389Be138e7',
     },
-    token: serializedTokens.cake,
+    token: serializedTokens.nwb,
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 252,
-    lpSymbol: 'BUSD-BNB LP',
+    pid: 1,
+    lpSymbol: 'USDT-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0x938fBFE48E5CaF73C342105522fE6c96630294c2',
     },
-    token: serializedTokens.busd,
-    quoteToken: serializedTokens.wbnb,
+    token: serializedTokens.wbnb,
+    quoteToken: serializedTokens.usdt,
   },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
