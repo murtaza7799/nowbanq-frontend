@@ -1,39 +1,39 @@
 import React from 'react'
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon, Image } from '@pancakeswap/uikit'
+import { Heading, Flex, Text, Image } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetStats } from 'hooks/api'
-import useTheme from 'hooks/useTheme'
+// import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from 'utils/formatBalance'
-import useSWRImmutable from 'swr/immutable'
-import IconCard, { IconCardData } from '../IconCard'
-import StatCardContent from './StatCardContent'
-import GradientLogo from '../GradientLogoSvg'
+// import useSWRImmutable from 'swr/immutable'
+// import IconCard, { IconCardData } from '../IconCard'
+// import StatCardContent from './StatCardContent'
+// import GradientLogo from '../GradientLogoSvg'
 
 const Stats = () => {
   const { t } = useTranslation()
   const data = useGetStats()
-  const { theme } = useTheme()
+  // const { theme } = useTheme()
 
   const tvlString = data ? formatLocalisedCompactNumber(data.tvl) : '-'
-  const { data: txCount } = useSWRImmutable('totalTx30Days')
-  const { data: addressCount } = useSWRImmutable('addressCount30Days')
-  const trades = formatLocalisedCompactNumber(txCount)
-  const users = formatLocalisedCompactNumber(addressCount)
+  // const { data: txCount } = useSWRImmutable('totalTx30Days')
+  // const { data: addressCount } = useSWRImmutable('addressCount30Days')
+  // const trades = formatLocalisedCompactNumber(txCount)
+  // const users = formatLocalisedCompactNumber(addressCount)
 
-  const tvlText = t('And those users are now entrusting the platform with over $%tvl% in funds.', { tvl: tvlString })
-  const [entrusting, inFunds] = tvlText.split(tvlString)
+  const tvlText = t('And those users are now entrusting the platform with over  in funds.')
+  // const [entrusting, inFunds] = tvlText.split(tvlString)
 
-  const UsersCardData: IconCardData = {
-    icon: <CommunityIcon color="secondary" width="36px" />,
-  }
+  // const UsersCardData: IconCardData = {
+  //   icon: <CommunityIcon color="secondary" width="36px" />,
+  // }
 
-  const TradesCardData: IconCardData = {
-    icon: <SwapIcon color="primary" width="36px" />,
-  }
+  // const TradesCardData: IconCardData = {
+  //   icon: <SwapIcon color="primary" width="36px" />,
+  // }
 
-  const StakedCardData: IconCardData = {
-    icon: <ChartIcon color="failure" width="36px" />,
-  }
+  // const StakedCardData: IconCardData = {
+  //   icon: <ChartIcon color="failure" width="36px" />,
+  // }
   
 
   return (
@@ -50,9 +50,9 @@ const Stats = () => {
       </Text>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {entrusting}
-          <>{data ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
-          {inFunds}
+         
+          <>{tvlText}</>
+          
         </Text>
       </Flex>
 
@@ -60,7 +60,7 @@ const Stats = () => {
         {t('Will you join them?')}
       </Text>
 
-      <Flex flexDirection={['column', null, null, 'row']}>
+      {/* <Flex flexDirection={['column', null, null, 'row']}>
         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
             headingText={t('%users% users', { users })}
@@ -82,7 +82,7 @@ const Stats = () => {
             highlightColor={theme.colors.failure}
           />
         </IconCard>
-      </Flex>
+      </Flex> */}
     </Flex>
   )
 }

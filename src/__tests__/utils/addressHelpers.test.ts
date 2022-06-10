@@ -2,10 +2,9 @@ import { getAddress } from 'utils/addressHelpers'
 
 describe('getAddress', () => {
   const address = {
-    56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    56: '0x5b7fFe8BAFB420e413fd928CDc22AD3554f14c67',
     97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
   }
-
   it(`get address for mainnet (chainId 56)`, () => {
     process.env.NEXT_PUBLIC_CHAIN_ID = '56'
     const expected = address[56]
