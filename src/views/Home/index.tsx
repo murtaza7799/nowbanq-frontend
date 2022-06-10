@@ -127,7 +127,7 @@ const Home: React.FC = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
-        <FarmsPoolsRow />
+        {/* <FarmsPoolsRow /> */}
       </PageSection>
 
       <PageSection
@@ -137,7 +137,7 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <SalesSection {...cakeSectionData(t)} />
-        <CakeDataRow />
+        {/* <CakeDataRow /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
