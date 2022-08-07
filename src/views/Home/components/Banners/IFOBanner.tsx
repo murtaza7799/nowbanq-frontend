@@ -94,19 +94,19 @@ const IFOBanner = () => {
     <Wrapper>
       <Inner>
         <LeftWrapper>
-          <StyledSubheading>{t('Live')}</StyledSubheading>
-          <StyledHeading scale="xl">Froyo IFO</StyledHeading>
-          <NextLinkFromReactRouter to="/ifo">
+          <StyledSubheading>{t('Development Alert !')}</StyledSubheading>
+          <StyledHeading scale="xl">Currently This Site is Under Development</StyledHeading>
+          <NextLinkFromReactRouter to="https://nowbanq.com/" target="_blank">
             <Button>
               <Text color="invertedContrast" bold fontSize="16px" mr="4px">
-                {t('Go to IFO')}
+                {t('Visit Our Site For more Info')}
               </Text>
               <ArrowForwardIcon color="invertedContrast" />
             </Button>
           </NextLinkFromReactRouter>
         </LeftWrapper>
         <RightWrapper>
-          <img src="/images/decorations/3d-ifo-froyo.png" alt="IFO Froyo" />
+          <img src="/logo.png" alt="NowBanq" />
         </RightWrapper>
       </Inner>
     </Wrapper>
