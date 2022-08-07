@@ -22,9 +22,9 @@ import IFOBanner from './components/Banners/IFOBanner'
 const showBanner = false
 
 const HomeBanner = ({ account }: { account: string }) => {
-  if (!showBanner) {
-    return null
-  }
+  // if (!showBanner) {
+  //   return null
+  // }
 
   return (
     <Flex
